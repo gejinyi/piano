@@ -1,0 +1,47 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+html{
+    background: url(./bg.jpg);
+}
+.wrapper{
+    height: 150px;
+    position: fixed; 
+    /* 定位之后宽度自适应 */
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    top: 0;
+    margin: auto;
+    box-shadow: 0 0 10px #00000044;
+    cursor: pointer;
+}
+.item{
+    position: absolute;
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+.item.white{
+    height: 100%;
+    background-color: #fff;
+    border: 1px solid #00000044;
+    z-index: 1;
+}
+.item.black{
+    height: 96px;
+    background-color: #444;
+    border: 1px solid #00000088;
+    color: #fff;
+    z-index: 2;
+}
+.item span{
+    position: absolute;
+    bottom: 5px;
+    text-align: center;
+    width: 100%;
+    word-break: break-all;
+}
+.item.active{
+   background-color: #bd87b0;
+}
